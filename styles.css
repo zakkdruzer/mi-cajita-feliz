@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 header {
   background-color: #e63946;       /* fondo sugerido */
   padding: 30px;                   /* padding en los 4 lados */
@@ -5,4 +11,11 @@ header {
   margin-bottom: 20px;             /* separación con el resto */
   text-align: center;              /* texto centrado */
   color: #ffffff;                  /* texto en blanco */
+}
+
+.caja-prueba {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #000;
+  background-color: #f1faee;
 }
