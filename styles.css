@@ -35,6 +35,7 @@ header {
   padding: 20px;
   border: 5px solid #000;
   background-color: #f1faee;
+  display: none; /* ya no aparece en la página */
 }
 
 .vitrina {
