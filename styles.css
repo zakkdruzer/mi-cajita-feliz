@@ -95,3 +95,9 @@ header {
   color: #ffffff;
   clear: both;  /* se coloca debajo de cualquier float previo */
 }
+
+@media (max-width: 600px) {
+  .vitrina {
+    grid-template-columns: 1fr;
+  }
+}
