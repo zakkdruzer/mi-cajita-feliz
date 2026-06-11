@@ -29,3 +29,17 @@ header {
   border: 5px solid #000;
   background-color: #f1faee;
 }
+
+.vitrina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 16px;                             /* misma separación filas/columnas */
+  padding: 16px;                         /* opcional, aire interno */
+}
+
+.pizza-card {
+  background-color: #f1faee;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
