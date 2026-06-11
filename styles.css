@@ -50,7 +50,12 @@ header {
   border-radius: 12px;
   border: 1px solid #e5e5e5;
 
-  position: relative; /* ancla para el badge */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pizza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .badge-nueva {
@@ -63,4 +68,30 @@ header {
   border-radius: 999px;
   font-size: 12px;
   font-weight: bold;
+}
+
+.historia {
+  width: 90%;           /* ancho fluido */
+  max-width: 800px;     /* opcional: no crecer infinito en pantallas grandes */
+  margin: 40px auto;    /* centrado horizontalmente */
+  line-height: 1.5;
+}
+
+.historia-imagen {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.site-footer {
+  margin-top: 40px;
+  padding: 16px;
+  text-align: center;
+  background-color: #1d3557;
+  color: #ffffff;
+  clear: both;  /* se coloca debajo de cualquier float previo */
 }
