@@ -16,14 +16,18 @@ nav a {
 
 header {
   background-color: #e63946;
-  padding: 20px 30px;                 /* ahora también lateral cómodo */
+  padding: 20px 30px;
   border-bottom: 6px solid #f4a261;
   margin-bottom: 20px;
   color: #ffffff;
 
-  display: flex;                      /* activa flexbox */
-  justify-content: space-between;     /* logo a la izq, nav a la der */
-  align-items: center;                /* centrados verticalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky; /* se comporta como relative hasta llegar al top */
+  top: 0;           /* se pega al borde superior de la ventana */
+  z-index: 1000;    /* queda por encima del contenido */
 }
 
 .caja-prueba {
